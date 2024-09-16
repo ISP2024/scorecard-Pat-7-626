@@ -52,7 +52,7 @@ def ordinal(num: int) -> str:
 
     For examples: ordinal(1) is '1st', ordinal(2) is '2nd'.
     """
-    suffixes: dict[int: str] = {1: "st", 2: "nd", 3: "rd"}
+    suffixes: dict[int, str] = {1: "st", 2: "nd", 3: "rd"}
     return str(num) + suffixes.get(num, "th")
 
 
